@@ -5,15 +5,16 @@
 <div>
 	<div>
 		{{each burger}}
-		{{#if burger_name}}
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
-						<pre>{{this.id}}, {{this.burger_name}}, {{this.date}}</pre>
+						<pre>
+							{{id}}, {{burger_name}}
+						</pre>
 					</div>
 				</div>
 			</div>
-		{{/if}}
+
 		{{/each}}	
 	</div>
 </div>

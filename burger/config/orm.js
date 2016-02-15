@@ -21,7 +21,7 @@ var orm = {
       if (err) throw err;
       cb(result);
     });
-  }
+  }ao
 };
     
 module.exports = orm;

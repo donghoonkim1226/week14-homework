@@ -6,7 +6,7 @@ var methodOverride = require('method-override');
 var bodyParser = require('body-parser');
 var mysql = require('mysql');
 
-app.use(express.static(__dirname + '/public'));
+app.use("/static", express.static("public"));
 
 app.engine('handlebars', expressHandleBars({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');

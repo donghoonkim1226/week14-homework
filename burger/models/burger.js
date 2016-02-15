@@ -14,4 +14,4 @@ var burgers = {
   }
 };
     
-module.exports = router;
+module.exports = burgers;

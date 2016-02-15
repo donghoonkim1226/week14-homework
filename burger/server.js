@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var expressHandleBars = require("express-handlebars");
-var connect = require('connect');
+// var connect = require('connect');
 var methodOverride = require('method-override');
 var bodyParser = require('body-parser');
 var mysql = require('mysql');
@@ -19,7 +19,7 @@ app.use('/create', routes);
 app.use('/update', routes);
 app.use('/delete', routes);
 
-var port = 8080;cdel
+var PORT = 8080;
 app.listen(PORT, function() {
   console.log("Listening on port %s", PORT);
 });

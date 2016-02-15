@@ -15,8 +15,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 var routes = require('./controllers/burgers_controller.js');
 app.use('/', routes);
-app.use('/add', routes);
-app.use('/devourer', routes);
+app.use('/create', routes);
+app.use('/update', routes);
+app.use('/delete', routes);
 
 var port = 8080;
 app.listen(PORT, function() {
